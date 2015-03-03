@@ -14,57 +14,56 @@
     <![endif]-->
   </head>
   <body>
-  <p class="message">Create a maze by clicking the lines of the grid</p>
-  <section>
-  <div class="drag">
-    <div class="jerry">
-      <p>Drag jerry image to the box it has to start from!</p>     
-      <img id="jerry" src="images/jerry.png">
-    </div>
-    <div class="cheese">
-      <p>Drag cheese image to the box jerry has to reach up</p>      
-      <img id="cheese" src="images/cheese.png">
-    </div>
-  </div>
-  
-  <table class="edge-click" id="maze"cellspacing="0">
-    <tr>
-      <td class="bd-top bd-left"></td>
-      <td class="bd-top"></td>
-      <td class="bd-top"></td>
-      <td class="bd-top bd-right"></td>
-    </tr>
-    <tr>
-      <td class="bd-left"></td>
-      <td></td>
-      <td></td>
-      <td class="bd-right"></td>
-    </tr>
-    <tr>
-      <td class="bd-left"></td>
-      <td></td>
-      <td></td>
-      <td class="bd-right"></td>
-    </tr>
-    <tr>
-      <td class="bd-bottom bd-left"></td>
-      <td class="bd-bottom"></td>
-      <td class="bd-bottom"></td>
-      <td class="bd-bottom bd-right"></td>
-    </tr>
-  </table>
-  <div class="solve">
-    <p>After Creating the maze,<br>click to solve</p>
-    <br>
-    <button>Solve!</button>
-  </div>
-	<p class="error init" id="corner"><b>Error:</b> Dont select corners, select edges!</p>
-  <p class="error init" id="overlap"><b>Error:</b> You cannot place start and end at the same place!</p>
-  <p class="error init" id="both"><b>Error:</b> You have to place both jerry and cheese on the grid!</p>
-  </section>
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <p class="message">Create a maze by clicking the lines of the grid</p>
+    <section>
+      <div class="drag">
+        <div class="jerry">
+          <p>Drag jerry image to the box it has to start from!</p>     
+          <img id="jerry" src="images/jerry.png">
+        </div>
+        <div class="cheese">
+          <p>Drag cheese image to the box jerry has to reach up</p>      
+          <img id="cheese" src="images/cheese.png">
+        </div>
+      </div>
+      
+      <table class="edge-click" id="maze" cellspacing="0">
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+      </table>
+      <div class="solve">
+        <p>After Creating the maze,<br>click to solve</p>
+        <br>
+        <button>Solve!</button>
+      </div>
+      <p class="error init" id="corner"><b>Error:</b> Dont select corners, select edges!</p>
+      <p class="error init" id="overlap"><b>Error:</b> You cannot place start and end at the same place!</p>
+      <p class="error init" id="both"><b>Error:</b> You have to place both jerry and cheese on the grid!</p>
+    </section>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <!--<script src="scripts.js"></script>-->
+    <script src="script.js"></script>
     <script src="edgeClick.js"></script>
     <script src="solve.js"></script>
   </body>
