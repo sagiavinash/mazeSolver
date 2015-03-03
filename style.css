@@ -1,0 +1,134 @@
+body{
+  font-family:consolas;
+  font-size:17px;
+    color: #31708f;
+}
+.message{  
+  padding:15px;
+  border:1px solid #eee;
+  border-radius:0 0 4px 4px ;
+  background-color: #f8f8f8;
+  margin:0px auto 0 auto;
+  font-size:17px;
+  color: #aaa;
+  display:table;
+}
+section{
+  width:875px;
+  display:block;
+  margin:50px auto;
+}
+.drag{
+  display:inline-block;
+  vertical-align: middle;
+  width:290px;
+  height:120px;
+  padding:10px;
+  margin:20px auto 0 auto;
+  border:1px solid #bce8f1;
+  border-radius:4px;
+  background-color: #d9edf7;
+}
+.drag div{
+  width:290px;
+  height:54px;
+  margin-bottom:10px;
+}
+.drag img{
+  width:40px;
+  height:40px;
+  padding:5px;
+  border:2px solid #bce8f1;
+  border-radius:4px;
+  display:inline-block;
+}
+.drag p{
+  width:225px;
+  text-align:justify;
+  padding:10px 0 0 0;
+  display:inline-block;
+  vertical-align:top;
+}
+.solve{
+  display:inline-block;
+  vertical-align: middle;
+  width:225px;
+  height:100px;
+  padding:10px;
+  margin:20px auto 0 auto;
+  border:1px solid #bce8f1;
+  border-radius:4px;
+  background-color: #d9edf7;
+}
+.solve img{
+  width:40px;
+  height:40px;
+  padding:5px;
+  border:2px solid #bce8f1;
+  border-radius:4px;
+  display:inline-block;
+}
+.solve p{
+  text-align:center;
+  line-height:25px;
+}
+.solve button{
+  display:block;
+  margin:0 auto;
+}
+table{
+  display:inline-block;
+  vertical-align: middle;
+  width:200px;
+  height:200px;
+  border-collapse: collapse;
+}
+td{
+  width:50px !important;
+  height:50px !important;
+  margin:0;
+  padding:0;
+  border:2px solid #ddd;
+  text-align:center;
+  -webkit-box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  -o-box-sizing:border-box;
+  -ms-box-sizing:border-box;
+  box-sizing:border-box;
+  overflow:hidden;
+  line-height:0;
+  font-size:0;
+}
+td img{
+  width:45px;
+  height:46px;
+}
+.bd-top,.ec-top{
+  border-top-color:black;
+}
+.bd-right,.ec-right{
+  border-right-color:black;
+}
+.bd-bottom,.ec-bottom{
+  border-bottom-color:black;
+}
+.bd-left,.ec-left{
+  border-left-color:black;
+}
+.error {
+    padding:15px;
+    border:1px solid #ebccd1;
+    border-radius:4px;
+    background-color: #f2dede;
+    margin:20px auto 0 auto;
+    font-family:consolas;
+    font-size:17px;
+    color:#a94442;
+    display:table;
+}
+.error.init{
+  display: none;
+}
+b{
+  font-weight:bold;
+}

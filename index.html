@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link rel="shortcut icon" type="image/x-icon" href="http://sagiavinash.com/images/favicon.png?v=1.1">
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+      <script src="http://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="http://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+  <p class="message">Create a maze by clicking the lines of the grid</p>
+  <section>
+  <div class="drag">
+    <div class="jerry">
+      <p>Drag jerry image to the box it has to start from!</p>     
+      <img id="jerry" src="images/jerry.png">
+    </div>
+    <div class="cheese">
+      <p>Drag cheese image to the box jerry has to reach up</p>      
+      <img id="cheese" src="images/cheese.png">
+    </div>
+  </div>
+  
+  <table class="edge-click" id="maze"cellspacing="0">
+    <tr>
+      <td class="bd-top bd-left"></td>
+      <td class="bd-top"></td>
+      <td class="bd-top"></td>
+      <td class="bd-top bd-right"></td>
+    </tr>
+    <tr>
+      <td class="bd-left"></td>
+      <td></td>
+      <td></td>
+      <td class="bd-right"></td>
+    </tr>
+    <tr>
+      <td class="bd-left"></td>
+      <td></td>
+      <td></td>
+      <td class="bd-right"></td>
+    </tr>
+    <tr>
+      <td class="bd-bottom bd-left"></td>
+      <td class="bd-bottom"></td>
+      <td class="bd-bottom"></td>
+      <td class="bd-bottom bd-right"></td>
+    </tr>
+  </table>
+  <div class="solve">
+    <p>After Creating the maze,<br>click to solve</p>
+    <br>
+    <button>Solve!</button>
+  </div>
+	<p class="error init" id="corner"><b>Error:</b> Dont select corners, select edges!</p>
+  <p class="error init" id="overlap"><b>Error:</b> You cannot place start and end at the same place!</p>
+  <p class="error init" id="both"><b>Error:</b> You have to place both jerry and cheese on the grid!</p>
+  </section>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <!--<script src="scripts.js"></script>-->
+    <script src="edgeClick.js"></script>
+    <script src="solve.js"></script>
+  </body>
+</html>
